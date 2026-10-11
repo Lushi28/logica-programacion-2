@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de temperatura</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="tarjeta">
+    
+    <h1>Conversor de temperatura</h1>
+    <p class="descripcion">Convierte grados Celsius a Kelvin y Fahrenheit.</p>
+    <p>Para ejecutar el programa ingresa valores numericos, no acepta valores boleano, alfanumericos, ni alfabeticos.</p>
+
+    <label for="celsius">Temperatura en Celsius (°C)</label>
+    <div class="fila">
+      <input id="celsius" type="text" inputmode="decimal" placeholder="Ejemplo: 45">
+      <button id="convertir" type="button">Convertir</button>
+    </div>
+
+    <p id="mensaje" aria-live="polite"></p>
+
+    <section id="resultados" hidden>
+      <h2>Resultado</h2>
+      <p>Grados Kelvin: <strong id="kelvin"></strong></p>
+      <p>Grados Fahrenheit: <strong id="fahrenheit"></strong></p>
+    </section>
+  </main>
+</body>
+</html>
